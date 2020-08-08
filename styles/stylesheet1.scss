@@ -12,8 +12,11 @@ $borderTest: 1px solid red;
 }
 
 html{
-    background-color:lightcoral;
+    background-color:#E06943; //re-adjust background color
     @include fullWidHei();
+    
+    //add in general font-family, color, font-size
+    color:#ffffff;
 }
 
 a,a.visited{
@@ -29,13 +32,13 @@ body{
     flex-direction:column;
 
     header{
-        border:$borderTest;
+        // border:$borderTest;
         height:55%;
         display:flex;
         justify-content: center;
         align-items: center;
         .title{
-            border:$borderTest;
+            // border:$borderTest;
             @include setMarPad();
             
             width:90%;
@@ -53,7 +56,7 @@ body{
             padding:10px 0px 10px 0px;
     
             a{
-                border:$borderTest;
+                // border:$borderTest;
                 background-color:white;
                 width:90%;
                 height:fit-content;
@@ -66,9 +69,11 @@ body{
                 flex-direction:row;
                 justify-content: center;
                 align-items: center;
+
+                //add in specific font-family, color, font-size
     
                 .buttonTitle{
-                    border:$borderTest;
+                    // border:$borderTest;
                     width:50%;
                     height:100%;
                     text-align:center;
