@@ -67,8 +67,8 @@ body .buttonChoice .buttons a {
   min-height: 100px;
   margin: 0 auto 0 auto;
   border-radius: 20px;
-  -webkit-box-shadow: 4px 4px 4px;
-          box-shadow: 4px 4px 4px;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
