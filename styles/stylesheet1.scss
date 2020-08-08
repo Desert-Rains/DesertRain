@@ -13,6 +13,7 @@ $borderTest: 1px solid red;
 
 html{
     background-color:lightcoral;
+    @include fullWidHei();
 }
 
 a,a.visited{
@@ -21,45 +22,71 @@ a,a.visited{
 }
 
 body{
-    border:$borderTest;
     @include setMarPad();
     @include fullWidHei();
+
     display:flex;
     flex-direction:column;
-    .title{
-        border:$borderTest;
-        @include setMarPad();
-        @include fullWidHei();
-        
-    }
-    .buttons{
-        border:$borderTest;
-        width:90%;
-        height:fit-content;
-        @include center();
-        border-radius:20px;
 
-        a{
+    header{
+        border:$borderTest;
+        height:55%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .title{
             border:$borderTest;
-            display:flex;
-            flex-direction:row;
+            @include setMarPad();
+            
+            width:90%;
+            height:fit-content;
+        }
+    }
 
-            .buttonTitle{
-                // border:$borderTest;
-                width:100%;
-                height:100%;
-            }
+    .buttonChoice{
+        height:45%;
+
+        .buttons{
     
-            .buttonImage{
-                width:100%;
-                height:100%;
+            width:100%;
+            height:fit-content; 
+            padding:10px 0px 10px 0px;
     
-                // border:$borderTest;
-                max-width:125px;
-                max-height:125px;
-                min-width: 75px;
-                min-height:75px;
+            a{
+                border:$borderTest;
+                background-color:white;
+                width:90%;
+                height:fit-content;
+                min-height:100px;
+                @include center();
+                border-radius:20px;
+                box-shadow:4px 4px 4px ;
     
+                display:flex;
+                flex-direction:row;
+                justify-content: center;
+                align-items: center;
+    
+                .buttonTitle{
+                    border:$borderTest;
+                    width:50%;
+                    height:100%;
+                    text-align:center;
+                }
+    
+                div{
+                    width:50%;
+                    height:100%;
+                    display:flex;
+    
+                    .buttonImage{
+                        // border:$borderTest;
+                        max-width:125px;
+                        max-height:125px;
+                        min-width: 75px;
+                        min-height:75px;
+                    }
+                }
             }
         }
     }
