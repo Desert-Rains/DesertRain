@@ -11,7 +11,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <!-- <link rel="stylesheet" href="styles/stylesheet3.css"> -->
         <link rel="stylesheet" href="styles/stylesheet4.css">
-        
+        <script>
+            $(document).ready(function(){
+                $("#sections-2").hide();
+                $("#subNav-1").click(function(){
+                    $("#sections-1").show();
+                    $("#sections-2").hide();
+                });
+                $("#subNav-2").click(function(){
+                    $("#sections-2").show();
+                    $("#sections-1").hide();
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -58,12 +70,12 @@
         </div>
 
         <div class="information">
-            <section class="section-1" id="about">
+            <section class="sections" id="sections-1">
                 <div>
                     <p>Address</p>
                     <strong>Insert Address</strong>
                 </div>
-                <div>
+                <div class="hours">
                     <p>Hours</p>
                     <ul>
                         <li>
@@ -98,33 +110,62 @@
                 </div>
             </section>
     
-            <section class="section-2" id="recipes">
-                <h2>Recipes (to be deleted)</h2>
-                <ul>
-                    <li>
+            <section class="sections" id="sections-2">
+                <ul class="list">
+                    <li class="Details">
                         <a href="recipiesDetails.html">
-                            <div>
+                            <div class="image">
                                 <image src="">Recipe image</image>
+                            </div>
+                            <div class="Name">
                                 <strong>Dish title</strong>
-                                <div>
+                            </div>
+                            <div class="preparation">
+                                <div class="prepIcon">
                                     <image src="">icon</image>
                                     <p>6 servings</p>
                                 </div>
-                                <div>
+                                <div class="prepIcon">
                                     <image src="">icon</image>
                                     <p>$6.00</p>
                                 </div>
-                                <div>
+                                <div class="prepIcon">
                                     <image src="">icon</image>
                                     <p>30 minutes</p>
+                                </div> 
+                            </div>
+                        </a>
+                    </li>
+                    <li class="Details">
+                        <a href="recipiesDetails.html">
+                            <div class="image">
+                                <image src="">Recipe image</image>
+                            </div>
+                            <div class="Name">
+                                <strong>Dish title</strong>
+                            </div>
+                            <div class="preparation">
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>6 servings</p>
                                 </div>
-                            </div> 
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>$6.00</p>
+                                </div>
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>30 minutes</p>
+                                </div> 
+                            </div>
                         </a>
                     </li>
                 </ul>
             </section>
         </div>
 
-        <div class="saveButtons">Save Store</div>
+        <div class="saveButtons">
+            <strong>Save Store</strong>
+        </div>
     </body>
 </html>

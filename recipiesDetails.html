@@ -8,16 +8,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles/stylesheet4.css">
+
+        <script>
+            $(document).ready(function(){
+                $(".sections").hide();
+                $("#sections-1").show();
+                $("#subNav-1").click(function(){
+                    $("#sections-1").show();
+                    $("#sections-2").hide();
+                    $("#sections-3").hide();
+                });
+                $("#subNav-2").click(function(){
+                    $("#sections-2").show();
+                    $("#sections-1").hide();
+                    $("#sections-3").hide();
+                });
+                $("#subNav-3").click(function(){
+                    $("#sections-3").show();
+                    $("#sections-1").hide();
+                    $("#sections-2").hide();
+                });
+            });
+        </script>
     </head>
 
     <body>
         <header>
             <nav>
                 <ul class="navBar">
-                    <li>
+                    <li class="backButton">
                         <a href="browseRecipe.html"><image src=""/>back</a>
                     </li>
-                    <li>
+                    <li class="title">
                         <a href=""><image src="">Account Icon</image></a>
                     </li>
                     <li>
@@ -26,128 +50,163 @@
                 </ul>
             </nav>
 
-            <h1>Spanish Potato Omelet</h1>
+            <div class="titlePannel">
+                <div class="subTitle">
+                    <h1>Spanish Potato Omelet</h1>
+                </div>
 
-            <div>
-                <ul>
-                    <li>
-                        <p>6</p>
-                        <p>Servings</p>
-                    </li>
-                    <li>
-                        <p>6.36</p>
-                        <p>Dollars</p>
-                    </li>
-                    <li>
-                        <p>50</p>
-                        <p>Minutes</p>
-                    </li>
-                </ul>
-            </div>
-            
+                <div class="titleInformation">
+                    <ul>
+                        <li>
+                            <p>6</p>
+                            <p>Servings</p>
+                        </li>
+                        <li>
+                            <p>6.36</p>
+                            <p>Dollars</p>
+                        </li>
+                        <li>
+                            <p>50</p>
+                            <p>Minutes</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>          
         </header>
 
-        <div>
+        <div class="subNavTags">
             <ul>
-                <li>Ingredient</li>
-                <li>Recipes</li>
-                <li>Store</li>
+                <li id="subNav-1">Ingredient</li>
+                <li id="subNav-2">Recipes</li>
+                <li id="subNav-3">Store</li>
             </ul>
         </div>
 
-        <section class="section-1" id="about">
-            <h2>Ingredients (to be deleted)</h2>
-            <div>
-                <ul>
-                    <li>
-                        <strong>Material</strong>
-                        <p>1.5lb</p>
-                        <p>$cost</p>
+        <div class="information">
+            <section class="sections" id="sections-1">
+                <h2>Materials (to be deleted)</h2>
+                <div>
+                    <ul class="listMaterials">
+                        <li class="Materials">
+                            <strong>Material</strong>
+                            <p>1.5lb</p>
+                            <p>$cost</p>
+                        </li>
+                        <li class="Materials">
+                            <strong>Material</strong>
+                            <p>1.5lb</p>
+                            <p>$cost</p>
+                        </li>
+                        <li class="Materials">
+                            <strong>Material</strong>
+                            <p>1.5lb</p>
+                            <p>$cost</p>
+                        </li>
+                        <li class="Materials">
+                            <strong>Material</strong>
+                            <p>1.5lb</p>
+                            <p>$cost</p>
+                        </li>
+                        <li class="Materials">
+                            <strong>Material</strong>
+                            <p>1.5lb</p>
+                            <p>$cost</p>
+                        </li>
+                        <li class="Materials optional">
+                            <p>Optional</p>
+                            <strong>Material</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    Amount are based on portion size of 6 adults
+                    <br>
+                    Price are calculated using portion size
+                </div>
+            </section>
+    
+            <section class="sections" id="sections-2">
+                <h2>Recipes (to be deleted)</h2>
+                <ol class="listSteps">
+                    <li class="steps">
+                        <p>Step 1</p>
                     </li>
-                    <li>
-                        <strong>Material</strong>
-                        <p>1.5lb</p>
-                        <p>$cost</p>
+                    <li class="steps">
+                        <p>Step 2</p>
                     </li>
-                    <li>
-                        <strong>Material</strong>
-                        <p>1.5lb</p>
-                        <p>$cost</p>
+                    <li class="steps">
+                        <p>Step 3</p>
                     </li>
-                    <li>
-                        <strong>Material</strong>
-                        <p>1.5lb</p>
-                        <p>$cost</p>
+                </ol>
+    
+                <div>
+                    Total time is based on preparation time and cooking time
+                    <br>
+                    Preparation time is 10 minutes and cooking time is 40 minutes
+                </div>
+            </section>
+    
+            <section class="sections" id="sections-3">
+                <h2>Stores (to be deleted)</h2>
+                <ul class="list">
+                    <li class="Details">
+                        <a href="storeDetails.html">
+                            <div class="image">
+                                <image src="">Recipe image</image>
+                            </div>
+                            <div class="Name">
+                                <strong>Dish title</strong>
+                            </div>
+                            <div class="preparation">
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>6 servings</p>
+                                </div>
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>$6.00</p>
+                                </div>
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>30 minutes</p>
+                                </div>
+                            </div>
+                        </a>
                     </li>
-                    <li>
-                        <strong>Material</strong>
-                        <p>1.5lb</p>
-                        <p>$cost</p>
-                    </li>
-                    <li>
-                        <p>Optional</p>
-                        <strong>Material</strong>
+                    <li class="Details">
+                        <a href="storeDetails.html">
+                            <div class="image">
+                                <image src="">Recipe image</image>
+                            </div>
+                            <div class="Name">
+                                <strong>Dish title</strong>
+                            </div>
+                            <div class="preparation">
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>6 servings</p>
+                                </div>
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>$6.00</p>
+                                </div>
+                                <div class="prepIcon">
+                                    <image src="">icon</image>
+                                    <p>30 minutes</p>
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <div>
-                Amount are based on portion size of 6 adults
-                <br>
-                Price are calculated using portion size
-            </div>
-        </section>
+    
+                <div>
+                    Recommended stores are based on where you will be traveling from and when you are available to grocery shop
+                </div>
+            </section>
+        </div>
 
-        <section class="section-2" id="recipes">
-            <h2>Recipes (to be deleted)</h2>
-            <ol>
-                <li>
-                    Step 1
-                </li>
-                <li>
-                    Step 2
-                </li>
-                <li>
-                    Step 3
-                </li>
-            </ol>
-
-            <div>
-                Total time is based on preparation time and cooking time
-                <br>
-                Preparation time is 10 minutes and cooking time is 40 minutes
-            </div>
-        </section>
-
-        <section class="section-3" id="stores">
-            <h2>Stores (to be deleted)</h2>
-            <ul>
-                <li>
-                    <a href="recipiesDetails.html">
-                        <div>
-                            <image src="">Recipe image</image>
-                            <strong>Dish title</strong>
-                            <div>
-                                <image src="">icon</image>
-                                <p>6 servings</p>
-                            </div>
-                            <div>
-                                <image src="">icon</image>
-                                <p>$6.00</p>
-                            </div>
-                            <div>
-                                <image src="">icon</image>
-                                <p>30 minutes</p>
-                            </div>
-                        </div> 
-                    </a>
-                </li>
-            </ul>
-
-            <div>
-                Recommended stores are based on where you will be traveling from and when you are available to grocery shop
-            </div>
-        </section>
-
-        <div class="saveButtons">Save Recipes</div>
+        <div class="saveButtons">
+            <strong>Save Recipes</strong>
+        </div>
     </body>
 </html>
