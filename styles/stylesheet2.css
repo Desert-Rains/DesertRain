@@ -186,8 +186,9 @@ body .formSection form #formContainer .forms .sectionQuestion #autoLocate div {
 body .formSection form #formContainer .forms .sectionQuestion #autoLocate p {
   margin: 0;
   padding: 0;
+  padding-left: 10px;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 body .formSection form #formContainer .forms .sectionQuestion .ulGeneral {

@@ -144,8 +144,9 @@ body{
                                 }
                                 p{
                                     @include setMarPad();
+                                    padding-left:10px;
                                     width:100%;
-                                    font-size:25px;
+                                    font-size:20px;
                                 }
                         }// end of location
 
