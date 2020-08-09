@@ -133,20 +133,19 @@ body{
                                 align-items: center;
                                 box-shadow: 4px 4px 4px rgba(0,0,0,.12);
 
+                                font-size:30px;
+
                                 div{
                                     width:fit-content;
                                     min-width:25px;
                                     height:fit-content;
                                     padding-left:15px; 
 
-                                    image{
-                                        width:25px;
-                                        height:25px;
-                                    }
                                 }
                                 p{
                                     @include setMarPad();
                                     width:100%;
+                                    font-size:25px;
                                 }
                         }// end of location
 
