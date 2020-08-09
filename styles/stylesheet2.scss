@@ -10,6 +10,9 @@ $borderTest: 1px solid red;
 @mixin center(){
     margin:0 auto 0 auto;
 }
+$backgroudColor: #E06943;
+$buttonColor:#F7AA29;
+$buttonHeight: 35px;
 
 html{
     background-color:#E06943; //re-adjust background color
@@ -81,6 +84,7 @@ body{
                     .header{
                         width:100%;
                         height:25%;
+                        min-height:150px;
                         display:flex;
                         align-items: center;
                         justify-content: center;
@@ -149,6 +153,7 @@ body{
                             }         
                         }
 
+                        //location
                         #location{
                             li{
                                 
@@ -158,6 +163,7 @@ body{
                             }
                         }
 
+                        //shop for whom
                         #shopFor{
                             input{
                                 width:30%;
@@ -167,14 +173,52 @@ body{
                             }
                         }
 
+                        //meal selections
+                        #mealSelect{
+                            li{
+                                border:$borderTest;
+                                input{
+                                    width:20px;
+                                    height:20px;
+                                    opacity:1;
+                                }
+                            }
+                        }
+
                     }
 
                     .next{
                         width:100%;
-                        height:35px;
+                        height:$buttonHeight;
                         margin:10px 0 10px 0;
-                        background-color:#F7AA29;
+                        background-color:$buttonColor;
                         text-align:center;
+                    }
+
+                    #submits{
+                        border:$borderTest;
+                        width:100%;
+                        display:flex;
+                        flex-direction:column;
+                        .restart{
+                            margin:10px 0 10px 0;
+                            border:1px solid white;
+                            width:100%;
+                            height:$buttonHeight;
+
+                            display:flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            div{
+                                width:fit-content;
+                            }
+                        }
+                        #submitButton{
+                            background-color: $buttonColor;
+                            border:none;
+                            height:$buttonHeight;
+                        }
                     }
                 }
             }

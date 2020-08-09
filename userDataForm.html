@@ -105,14 +105,26 @@
                         </div>
                         <fieldset class="sectionQuestion">
                             <legend>Select all that apply</legend>
-                            <ul>
+                            <ul class="ulGeneral" id="mealSelect">
                                 <li>
                                     <input id="gluttenFree" type="checkbox">
                                     <label for="gluttenFree">Glutten-Free</label>
                                 </li>
                                 <li>
+                                    <input id="hahal" type="checkbox">
+                                    <label for="hahal">Hahal</label>
+                                </li>
+                                <li>
                                     <input id="lactoseFree" type="checkbox">
                                     <label for="lactoseFree">Lactose-free</label>
+                                </li>
+                                <li>
+                                    <input id="peanutFree" type="checkbox">
+                                    <label for="peanutFree">Peanut/tree-nut free</label>
+                                </li>
+                                <li>
+                                    <input id="pescetarian" type="checkbox">
+                                    <label for="pescetarian">Pescetarian</label>
                                 </li>
                                 <li>
                                     <input id="vegan" type="checkbox">
@@ -123,10 +135,12 @@
                                     <label for="vegeterian">Vegeterian</label>
                                 </li>
                             </ul>
-
-                            <a class="restart" href="index.html">Start Over</a>
-                            <input type="submit" />
                         </fieldset>
+
+                        <div id="submits">
+                            <a class="restart" href="index.html"><div>Start Over</div></a>
+                            <input id="submitButton" type="submit" />
+                        </div>
                     </div>
                 </div>
             </form>

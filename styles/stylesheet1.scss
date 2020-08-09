@@ -11,8 +11,10 @@ $borderTest: 1px solid red;
     margin:0 auto 0 auto;
 }
 
+$backgroundColor:#E06943;
+
 html{
-    background-color:#E06943; //re-adjust background color
+    background-color:$backgroundColor; //re-adjust background color
     @include fullWidHei();
     
     //add in general font-family, color, font-size
@@ -35,6 +37,7 @@ body{
         // border:$borderTest;
         height:55%;
         display:flex;
+        flex-direction:column;
         justify-content: center;
         align-items: center;
         .title{
@@ -43,6 +46,30 @@ body{
             
             width:90%;
             height:fit-content;
+        }
+        .navBar{
+            // border:$borderTest;
+            position: absolute;
+            top:0;
+            width:100%;
+            height:50px;
+
+            background-color: $backgroundColor;
+
+            ul{
+                @include setMarPad();
+                width:100%;
+                height:100%;
+                list-style-type:none;
+                display: flex;
+                flex-direction:row;
+                align-items: center;
+                justify-content: space-evenly;
+                
+                // li{
+                //     border:$borderTest;
+                // }
+            }
         }
     }
 
@@ -95,4 +122,10 @@ body{
             }
         }
     }
+}
+
+.shopper{
+    @include fullWidHei();
+    background-color: #ffffff;
+    color:black;
 }
