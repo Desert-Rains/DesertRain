@@ -15,7 +15,9 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 body header {
@@ -174,7 +176,10 @@ body .subNavTags ul li {
 }
 
 body .information {
-  background-color: lightpink;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,11 +187,208 @@ body .information {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow-x: hidden;
 }
 
 body .information section {
+  width: 95%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body .information section .hours {
+  width: 100%;
+  height: 100%;
+}
+
+body .information section .hours ul {
+  margin: 0;
+  padding: 0;
+}
+
+body .information section .hours ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5px;
+}
+
+body .information section .hours ul li strong {
+  border: 1px solid red;
+  width: 35%;
+}
+
+body .information section .hours ul li p {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 35%;
+}
+
+body .information section .list {
   border: 1px solid red;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body .information section .list .Details {
+  border: 1px solid red;
+  width: 90%;
+  height: 200px;
+  margin: 25px auto 25px auto;
+  -webkit-box-shadow: 4px 4px 2px rgba(211, 211, 211, 0.75);
+          box-shadow: 4px 4px 2px rgba(211, 211, 211, 0.75);
+}
+
+body .information section .list .Details a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .information section .list .Details a .image {
+  background-color: lightcoral;
+  width: 100%;
+  height: 65%;
+}
+
+body .information section .list .Details a .Name {
+  border: 1px solid red;
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .information section .list .Details a .Name strong {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid red;
+}
+
+body .information section .list .Details a .preparation {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .information section .list .Details a .preparation .prepIcon {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .information section .list .Details a .preparation .prepIcon p {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+
+body .information section .listMaterials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body .information section .listMaterials li {
+  margin: 15px 0 15px 0;
+}
+
+body .information section .listMaterials .Materials {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .information section .listMaterials .Materials strong {
+  border: 1px solid red;
+}
+
+body .information section .listMaterials .Materials p {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+body .information section .listMaterials .optional {
+  display: block;
+}
+
+body .information section .listSteps {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+body .information section .listSteps .steps {
+  font-weight: bold;
+}
+
+body .information section .listSteps .steps > p {
+  font-weight: normal;
+}
+
+body .saveButtons {
+  border: 1px solid red;
+  margin: 10px auto 10px auto;
+  width: 95%;
+  height: 45px;
+  background-color: #E06943;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=stylesheet4.css.map */
