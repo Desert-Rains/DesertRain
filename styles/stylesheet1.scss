@@ -13,7 +13,7 @@ $borderTest: 1px solid red;
 }
 
 $backgroundColor:#E06943;
-$width:70%;
+$width:80%;
 
 html{
     background-color:$backgroundColor; //re-adjust background color
@@ -53,8 +53,8 @@ body{
                 
                 width:$width;
                 height:fit-content;
-                font-size:45px;
-                font-weight:500;
+                font-size:35px;
+                font-weight:700;
                 line-height:1.35;
             }
         }
@@ -74,15 +74,6 @@ body{
                 flex-direction:row;
                 align-items: center;
                 justify-content: space-evenly;
-
-                li{
-                    font-weight:400;
-                    color:white;
-                    a{
-                        font-weight:400;
-                        color:white;
-                    }
-                }
                 
             }
         }
@@ -92,14 +83,16 @@ body{
         height:45%;
 
         .buttons{
+    
             width:100%;
-            height:fit-content;
+            height:fit-content; 
             padding:10px 0px 10px 0px;
     
             a{
+                // border:$borderTest;
                 background-color:white;
                 width:$width;
-                height:100%;
+                height:fit-content;
                 min-height:100px;
                 @include center();
                 border-radius:20px;
@@ -111,15 +104,15 @@ body{
                 justify-content: center;
                 align-items: center;
 
+                //add in specific font-family, color, font-size
+                font-size:21px;
+                word-wrap:wrap;
 
                 .buttonTitle{
+                    // border:$borderTest;
                     width:40%;
                     height:100%;
                     text-align:center;
-
-                    //add in specific font-family, color, font-size
-                    font-size:24px;
-                    font-weight:400;
                 }
     
                 div{
