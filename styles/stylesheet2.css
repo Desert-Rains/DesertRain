@@ -75,11 +75,7 @@ body header nav #navBar li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-body header nav #navBar li a #backIcon {
-  width: 20px;
-  height: 20px;
+  color: white;
 }
 
 body header nav #navBar .bar {

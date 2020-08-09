@@ -21,6 +21,7 @@ html{
     
     //add in general font-family, color, font-size
     color:$backgroundColor;
+    font-family: 'Lato', sans-serif;
 }
 
 a,a.visited{
@@ -29,7 +30,7 @@ a,a.visited{
 }
 
 body{
-    border:$borderTest;
+    // border:$borderTest;
     @include setMarPad();
     // @include fullWidHei();
     width:100%;
@@ -45,7 +46,7 @@ body{
         flex-direction:column;
         
         nav{
-            border:$borderTest;
+            // border:$borderTest;
             @include setMarPad();
             width:100%;
             height:75px;
@@ -64,7 +65,7 @@ body{
                 }
 
                 li{
-                    border:$borderTest;
+                    // border:$borderTest;
                     width:fit-content;
                 }
                 li:first-child{
@@ -75,7 +76,7 @@ body{
 
         //intro pannel
         .titlePannel{
-            border:$borderTest;
+            // border:$borderTest;
             background-color:lightgreen;
             @include fullWidHei();
             display:flex;
@@ -83,14 +84,14 @@ body{
 
             // Title
             .subTitle{
-                border:$borderTest;
+                // border:$borderTest;
                 width:100%;
                 height:75%;
                 display:flex;
                 align-items: center;
             }
             .titleInformation{
-                border:$borderTest;
+                // border:$borderTest;
                 width:100%;
                 height:25%;
                 ul{
@@ -104,7 +105,7 @@ body{
                     justify-content: center;
 
                     li{
-                        border:$borderTest;
+                        // border:$borderTest;
                         width:35%;
                         height:fit-content;
                         text-align:center;
@@ -122,7 +123,7 @@ body{
 
     //sub navigation tags
     .subNavTags{
-        border:$borderTest;
+        // border:$borderTest;
         width:100%;
         height:50px;
         ul{
@@ -135,7 +136,7 @@ body{
             justify-content: center;
 
             li{
-                border:$borderTest;
+                // border:$borderTest;
                 width:35%;
                 text-align:center;
             }
@@ -168,11 +169,11 @@ body{
                         margin-top:5px;
                         
                         strong{
-                            border:$borderTest;
+                            // border:$borderTest;
                             width:35%;
                         }
                         p{
-                            border:$borderTest;
+                            // border:$borderTest;
                             @include setMarPad();
                             width:35%;
                         }
@@ -182,7 +183,7 @@ body{
 
             //item details
             .list{
-                border:$borderTest;
+                // border:$borderTest;
                 width:100%;
                 height:fit-content;
     
@@ -191,7 +192,7 @@ body{
     
                 //individual list component
                 .Details{
-                    border:$borderTest;
+                    // border:$borderTest;
                     width:90%;
                     height:200px;
                     margin:25px auto 25px auto;
@@ -211,7 +212,7 @@ body{
                         }
                         //component name
                         .Name{
-                            border:$borderTest;
+                            // border:$borderTest;
                             width:100%;
                             height:25%;
                             display:flex;
@@ -219,7 +220,7 @@ body{
     
                             strong{
                                 height:fit-content;
-                                border:$borderTest;
+                                // border:$borderTest;
                             }
                         }
                         //component preparation
@@ -229,7 +230,7 @@ body{
                             display:flex;
                             flex-direction:row;
                             .prepIcon{
-                                border:$borderTest;
+                                // border:$borderTest;
                                 width:100%;
                                 height:100%;
                                 display:flex;
@@ -254,15 +255,15 @@ body{
                     margin:15px 0 15px 0;
                 }
                 .Materials{
-                    border:$borderTest;
+                    // border:$borderTest;
                     display:flex;
                     flex-direction:row;
                     justify-content: space-between;
-                    strong{
-                        border:$borderTest;
-                    }
+                    // strong{
+                    //     // border:$borderTest;
+                    // }
                     p{
-                        border:$borderTest;
+                        // border:$borderTest;
                         @include setMarPad();
                     }
                 }
@@ -288,7 +289,7 @@ body{
     }
 
     .saveButtons{
-        border:$borderTest;
+        // border:$borderTest;
         margin:10px auto 10px auto;
 
         width:95%;

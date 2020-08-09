@@ -76,12 +76,22 @@ body{
                 justify-content: space-evenly;
 
                 li{
+                    // border:$borderTest;
+                    margin:10px;
+                    width:fit-content;
                     font-weight:400;
                     color:white;
                     a{
                         font-weight:400;
                         color:white;
+                        i{
+                            font-size:30px;
+                        }
                     }
+                }
+                #home{
+                    width:100%;
+                    padding-left:25px;
                 }
                 
             }

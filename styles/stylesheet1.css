@@ -91,6 +91,10 @@ body header .navBar ul {
 }
 
 body header .navBar ul li {
+  margin: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 400;
   color: white;
 }
@@ -98,6 +102,15 @@ body header .navBar ul li {
 body header .navBar ul li a {
   font-weight: 400;
   color: white;
+}
+
+body header .navBar ul li a i {
+  font-size: 30px;
+}
+
+body header .navBar ul #home {
+  width: 100%;
+  padding-left: 25px;
 }
 
 body .buttonChoice {
