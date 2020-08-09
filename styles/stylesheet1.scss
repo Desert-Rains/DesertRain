@@ -12,18 +12,20 @@ $borderTest: 1px solid red;
 }
 
 $backgroundColor:#E06943;
-$width:85%;
+$width:80%;
 
 html{
     background-color:$backgroundColor; //re-adjust background color
     @include fullWidHei();
     
     //add in general font-family, color, font-size
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
     color:#ffffff;
 }
 
 a,a.visited{
-    color:black;
+    color:#679127;
     text-decoration: none;
 }
 
@@ -47,6 +49,9 @@ body{
             
             width:$width;
             height:fit-content;
+            font-size:35px;
+            font-weight:700;
+            line-height:1.35;
         }
         .navBar{
             // border:$borderTest;
@@ -67,9 +72,6 @@ body{
                 align-items: center;
                 justify-content: space-evenly;
                 
-                // li{
-                //     border:$borderTest;
-                // }
             }
         }
     }
@@ -100,10 +102,12 @@ body{
                 align-items: center;
 
                 //add in specific font-family, color, font-size
-    
+                font-size:21px;
+                word-wrap:wrap;
+
                 .buttonTitle{
                     // border:$borderTest;
-                    width:50%;
+                    width:40%;
                     height:100%;
                     text-align:center;
                 }

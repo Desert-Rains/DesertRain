@@ -19,11 +19,13 @@ html{
     @include fullWidHei();
     
     //add in general font-family, color, font-size
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
     color:#ffffff;
 }
 
 a,a.visited{
-    color:black;
+    color:#679127;
     text-decoration: none;
 }
 ul{
@@ -57,6 +59,14 @@ body{
     
                 li{
                     width:fit-content;
+                }
+                .bar{
+                    width:65%;
+                    max-width:75px;
+                    height:8px;
+                    border-radius:10px;
+                    background-color:lightgrey;
+                    opacity:0.8;
                 }
             }
         }

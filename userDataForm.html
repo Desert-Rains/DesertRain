@@ -7,29 +7,26 @@
         <meta name="author" content="Diyi Liu, Vicky Chou, Michelle Guo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/functions.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/stylesheet2.css">
 
         <script>
-            function slideRightIn(element){
-                $(element).animate({right:0},"slow");
-            }
-
             $(document).ready(function(){
-                // $(".formSection").fadeIn(2000);
-
                 $("#form-2").hide();
                 $("#form-3").hide();
 
                 $("#next-1").click(function(){
+                    $("#form-1").slideUp();
                     $("#form-1").hide();
                     $("#form-2").slideDown();
 
                 });
 
                 $("#next-2").click(function(){
+                    $("#form-2").slideUp();
                     $("#form-2").hide();
-                    $("#form-3").show();
+                    $("#form-3").slideDown();
                 });
 
             });
@@ -41,9 +38,9 @@
             <nav>
                 <ul id="navBar">
                     <li>backward</li>
-                    <li>one</li>
-                    <li>two</li>
-                    <li>three</li>
+                    <li class="bar" id="bar-1"><div></div></li>
+                    <li class="bar" id="bar-2"><div></div></li>
+                    <li class="bar"id="bar-3"><div></div></li>
                 </ul>
             </nav>
         </header>
