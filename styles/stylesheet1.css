@@ -53,12 +53,12 @@ body header div {
 body header div .title {
   margin: 0;
   padding: 0;
-  width: 80%;
+  width: 70%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 35px;
-  font-weight: 700;
+  font-size: 45px;
+  font-weight: 500;
   line-height: 1.35;
 }
 
@@ -90,6 +90,16 @@ body header .navBar ul {
           justify-content: space-evenly;
 }
 
+body header .navBar ul li {
+  font-weight: 400;
+  color: white;
+}
+
+body header .navBar ul li a {
+  font-weight: 400;
+  color: white;
+}
+
 body .buttonChoice {
   height: 45%;
 }
@@ -104,10 +114,8 @@ body .buttonChoice .buttons {
 
 body .buttonChoice .buttons a {
   background-color: white;
-  width: 80%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 70%;
+  height: 100%;
   min-height: 100px;
   margin: 0 auto 0 auto;
   border-radius: 20px;
@@ -127,14 +135,14 @@ body .buttonChoice .buttons a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 21px;
-  word-wrap: wrap;
 }
 
 body .buttonChoice .buttons a .buttonTitle {
   width: 40%;
   height: 100%;
   text-align: center;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 body .buttonChoice .buttons a div {

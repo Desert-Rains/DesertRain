@@ -34,7 +34,7 @@ ul{
 }
 
 body{
-    border:$borderTest;
+    // border:$borderTest;
     @include setMarPad();
     @include fullWidHei();
     display:flex;
@@ -42,7 +42,7 @@ body{
 
     //navigations
     header{
-        border:$borderTest;
+        // border:$borderTest;
         width:100%;
         height:50px;
         nav{
@@ -60,6 +60,14 @@ body{
     
                 li{
                     width:fit-content;
+                    a{
+                        display:flex;
+                        #backIcon{
+                            width:20px;
+                            height:20px;
+                            
+                        }
+                    }
                 }
                 .bar{
                     width:65%;
@@ -78,7 +86,7 @@ body{
         width:85%;
         height:100%;
         @include center();
-        border:$borderTest;
+        // border:$borderTest;
 
         form{
             @include fullWidHei();
@@ -86,7 +94,8 @@ body{
                 @include fullWidHei();
 
                 .forms{
-                    border:$borderTest;
+                    // border:$borderTest;
+                    border:none;
                     width:100%;
                     height:100%;
                     display:flex;
@@ -101,12 +110,14 @@ body{
                         justify-content: center;
                         .sectionTitle{
                             width:100%;
+                            font-size:35px;
                         }
                     }
                 
                     .sectionQuestion{
                         height:75%;
-                        border:$borderTest;
+                        // border:$borderTest;
+                        border:none;
                         @include setMarPad();
                         .sectionSubTitle{
                             @include setMarPad();
@@ -152,6 +163,7 @@ body{
                                 input{
                                     width:95%;
                                     height:40px;
+
                                     border-radius:5px;
                                     border:none;
                                     opacity:0.5;
@@ -160,6 +172,9 @@ body{
                                     width:99%;
                                     opacity: 1;
                                     box-shadow: 4px 4px 4px rgba(0,0,0,.12);
+                                }
+                                label{
+                                    font-size:18px;
                                 }        
                             }         
                         }
@@ -187,11 +202,14 @@ body{
                         //meal selections
                         #mealSelect{
                             li{
-                                border:$borderTest;
+                                // border:$borderTest;
+                                font-size:18px;
+                                font-weight:300;
                                 input{
                                     width:20px;
                                     height:20px;
                                     opacity:1;
+
                                 }
                             }
                         }
@@ -204,10 +222,13 @@ body{
                         margin:10px 0 10px 0;
                         background-color:$buttonColor;
                         text-align:center;
+                        font-size:24px;
+                        font-weight:400;
+                        color:black;
                     }
 
                     #submits{
-                        border:$borderTest;
+                        // border:$borderTest;
                         width:100%;
                         display:flex;
                         flex-direction:column;
@@ -223,12 +244,15 @@ body{
 
                             div{
                                 width:fit-content;
+                                font-size:24px;
+                                color:white;
                             }
                         }
                         #submitButton{
                             background-color: $buttonColor;
                             border:none;
                             height:$buttonHeight;
+                            font-size:24px;
                         }
                     }
                 }
