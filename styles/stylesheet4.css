@@ -9,4 +9,184 @@ a, a.visited {
   color: black;
   text-decoration: none;
 }
+
+body {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body header {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header nav {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #E06943;
+}
+
+body header nav .navBar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: white;
+}
+
+body header nav .navBar a, body header nav .navBar a:visited {
+  color: white;
+}
+
+body header nav .navBar li {
+  border: 1px solid red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body header nav .navBar li:first-child {
+  width: 100%;
+}
+
+body header .titlePannel {
+  border: 1px solid red;
+  background-color: lightgreen;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .titlePannel .subTitle {
+  border: 1px solid red;
+  width: 100%;
+  height: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .titlePannel .titleInformation {
+  border: 1px solid red;
+  width: 100%;
+  height: 25%;
+}
+
+body header .titlePannel .titleInformation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .titlePannel .titleInformation ul li {
+  border: 1px solid red;
+  width: 35%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+}
+
+body header .titlePannel .titleInformation ul li p {
+  margin: 0;
+  padding: 0;
+}
+
+body .subNavTags {
+  border: 1px solid red;
+  width: 100%;
+  height: 50px;
+}
+
+body .subNavTags ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .subNavTags ul li {
+  border: 1px solid red;
+  width: 35%;
+  text-align: center;
+}
+
+body .information {
+  background-color: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: hidden;
+}
+
+body .information section {
+  border: 1px solid red;
+  width: 100%;
+}
 /*# sourceMappingURL=stylesheet4.css.map */
