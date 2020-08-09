@@ -53,6 +53,8 @@ body header nav .navBar li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 body header nav .navBar .title {
@@ -68,7 +70,7 @@ body header nav .navBar .title h1 {
 body section .filter {
   border-bottom: 1px solid rgba(211, 211, 211, 0.75);
   width: 100%;
-  height: 25px;
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,6 +78,14 @@ body section .filter {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .filter div {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 body section .filter #filterIcon {
@@ -88,6 +98,7 @@ body section .filter #clearIcon {
 
 body section .filter #clearIcon strong {
   float: right;
+  color: #adadad;
 }
 
 body section .list {
@@ -121,7 +132,9 @@ body section .list .Details a {
 }
 
 body section .list .Details a .image {
-  background-color: lightcoral;
+  background-image: url("../images/storeImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 65%;
 }
@@ -141,6 +154,8 @@ body section .list .Details a .Name strong {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  font-size: 22px;
+  color: #E06943;
 }
 
 body section .list .Details a .preparation {

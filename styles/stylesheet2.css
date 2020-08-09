@@ -169,6 +169,7 @@ body .formSection form #formContainer .forms .sectionQuestion #autoLocate {
           align-items: center;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+  font-size: 30px;
 }
 
 body .formSection form #formContainer .forms .sectionQuestion #autoLocate div {
@@ -182,15 +183,11 @@ body .formSection form #formContainer .forms .sectionQuestion #autoLocate div {
   padding-left: 15px;
 }
 
-body .formSection form #formContainer .forms .sectionQuestion #autoLocate div image {
-  width: 25px;
-  height: 25px;
-}
-
 body .formSection form #formContainer .forms .sectionQuestion #autoLocate p {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-size: 25px;
 }
 
 body .formSection form #formContainer .forms .sectionQuestion .ulGeneral {
