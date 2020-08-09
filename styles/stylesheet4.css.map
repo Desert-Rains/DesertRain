@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAiBA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAC,KAAK;EAXtB,KAAK,EAAC,IAAI;EACV,MAAM,EAAC,IAAI;EAcX,KAAK,EARQ,OAAO;CASvB;;AAED,AAAA,CAAC,EAAC,CAAC,AAAA,QAAQ,CAAA;EACP,KAAK,EAAC,KAAK;EACX,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "stylesheet4.scss"
+    ],
+    "names": [],
+    "file": "stylesheet4.css"
+}

@@ -13,13 +13,16 @@
 
         <script>
             $(document).ready(function(){
+                $("#bar-1").css("background-color","white");
                 $("#form-2").hide();
                 $("#form-3").hide();
+
 
                 $("#next-1").click(function(){
                     $("#form-1").slideUp();
                     $("#form-1").hide();
                     $("#form-2").slideDown();
+                    $("#bar-2").css("background-color","white");
 
                 });
 
@@ -27,6 +30,7 @@
                     $("#form-2").slideUp();
                     $("#form-2").hide();
                     $("#form-3").slideDown();
+                    $("#bar-3").css("background-color","white");
                 });
 
             });

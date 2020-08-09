@@ -1,3 +1,5 @@
+//for browseStore.html & browseRecipe.html
+
 $borderTest: 1px solid red;
 @mixin setMarPad(){
     margin:0;
@@ -12,6 +14,7 @@ $borderTest: 1px solid red;
 }
 
 $backgroundColor:#E06943;
+$boxShadow:rgba(211,211,211,0.75);
 
 html{
     background-color:#ffff; //re-adjust background color
@@ -24,4 +27,136 @@ html{
 a,a.visited{
     color:black;
     text-decoration: none;
+}
+
+body{
+    border:$borderTest;
+    @include setMarPad();
+    @include fullWidHei();
+
+    //navigation bar
+    header{
+        border:$borderTest;
+        nav{
+            border:$borderTest;
+            @include setMarPad();
+            width:100%;
+            height:75px;
+            background-color:$backgroundColor;
+            .navBar{
+                @include setMarPad();
+                @include fullWidHei();
+                display:flex;
+                flex-direction:row;
+                align-items: center;
+
+                list-style-type:none;
+                color:white;
+                a,a:visited{
+                    color:white;
+                }
+
+                li{
+                    border:$borderTest;
+                    width:fit-content;
+                }
+                .title{
+                    width:100%;
+                    h1{
+                        @include setMarPad();
+                        padding-left:10px;
+                    }
+                }
+            }
+        } 
+    }// end of navigation bar
+
+    //main content section
+    section{
+        //filter section
+        .filter{
+            border:$borderTest;
+            border-bottom: 1px solid rgba(211,211,211,0.75);
+            width:100%;
+            height:25px;
+            display:flex;
+            flex-direction:row;
+            #filterIcon{
+                width:50%;
+            }
+            #clearIcon{
+                width:50%;
+                strong{
+                    float:right;
+                }        
+            }
+        }
+
+        //list section
+        .list{
+            border:$borderTest;
+            width:100%;
+            height:fit-content;
+
+            list-style-type: none;
+            @include setMarPad();
+
+            //individual list component
+            .Details{
+                border:$borderTest;
+                width:90%;
+                height:200px;
+                margin:25px auto 25px auto;
+                box-shadow:4px 4px 2px $boxShadow;
+
+                //within component box
+                a{
+                    @include fullWidHei();
+                    display:flex;
+                    flex-direction:column;
+                    
+                    // component image
+                    .image{
+                        background-color:lightcoral;
+                        width:100%;
+                        height:65%;
+                    }
+                    //component name
+                    .Name{
+                        border:$borderTest;
+                        width:100%;
+                        height:25%;
+                        display:flex;
+                        align-items: center;
+
+                        strong{
+                            height:fit-content;
+                            border:$borderTest;
+                        }
+                    }
+                    //component preparation
+                    .preparation{
+                        width:100%;
+                        height:10%;
+                        display:flex;
+                        flex-direction:row;
+                        .prepIcon{
+                            border:$borderTest;
+                            width:100%;
+                            height:100%;
+                            display:flex;
+                            flex-direction:row;
+                            p{
+                                @include setMarPad();
+                                padding-left:5px;
+                            }
+                        }
+
+                    }
+                }//end of inside component
+                
+            }
+        }//end of list section
+    }
+
 }
