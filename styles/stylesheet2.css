@@ -17,7 +17,6 @@ ul {
 }
 
 body {
-  border: 1px solid red;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -32,7 +31,6 @@ body {
 }
 
 body header {
-  border: 1px solid red;
   width: 100%;
   height: 50px;
 }
@@ -73,6 +71,17 @@ body header nav #navBar li {
   width: fit-content;
 }
 
+body header nav #navBar li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav #navBar li a #backIcon {
+  width: 20px;
+  height: 20px;
+}
+
 body header nav #navBar .bar {
   width: 65%;
   max-width: 75px;
@@ -86,7 +95,6 @@ body .formSection {
   width: 85%;
   height: 100%;
   margin: 0 auto 0 auto;
-  border: 1px solid red;
 }
 
 body .formSection form {
@@ -100,7 +108,7 @@ body .formSection form #formContainer {
 }
 
 body .formSection form #formContainer .forms {
-  border: 1px solid red;
+  border: none;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -129,11 +137,12 @@ body .formSection form #formContainer .forms .header {
 
 body .formSection form #formContainer .forms .header .sectionTitle {
   width: 100%;
+  font-size: 35px;
 }
 
 body .formSection form #formContainer .forms .sectionQuestion {
   height: 75%;
-  border: 1px solid red;
+  border: none;
   margin: 0;
   padding: 0;
 }
@@ -212,6 +221,10 @@ body .formSection form #formContainer .forms .sectionQuestion .ulGeneral li inpu
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
 }
 
+body .formSection form #formContainer .forms .sectionQuestion .ulGeneral li label {
+  font-size: 18px;
+}
+
 body .formSection form #formContainer .forms .sectionQuestion #location li #locationZip {
   width: 45%;
 }
@@ -225,7 +238,8 @@ body .formSection form #formContainer .forms .sectionQuestion #shopFor label {
 }
 
 body .formSection form #formContainer .forms .sectionQuestion #mealSelect li {
-  border: 1px solid red;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 body .formSection form #formContainer .forms .sectionQuestion #mealSelect li input {
@@ -240,10 +254,12 @@ body .formSection form #formContainer .forms .next {
   margin: 10px 0 10px 0;
   background-color: #F7AA29;
   text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
 }
 
 body .formSection form #formContainer .forms #submits {
-  border: 1px solid red;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,11 +290,14 @@ body .formSection form #formContainer .forms #submits .restart div {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 24px;
+  color: white;
 }
 
 body .formSection form #formContainer .forms #submits #submitButton {
   background-color: #F7AA29;
   border: none;
   height: 35px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=stylesheet2.css.map */
