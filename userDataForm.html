@@ -18,6 +18,12 @@
                     $("#form-2").show();
 
                 });
+
+                $("#next-2").click(function(){
+                    $("#form-2").hide();
+                    $("#form-3").show();
+                });
+
             });
         </script>
     </head>
@@ -44,41 +50,41 @@
 
                         <fieldset class="sectionQuestion">
                             <div>
-                                <h2>My current location</h2>
+                                <h2 class="sectionSubTitle">My current location</h2>
                                 <a id="autoLocate">
                                     <div>
                                         <image src="" />
-                                        <p>Locate me</p>
                                     </div>
+                                    <p>Locate me</p>
                                 </a>
                             </div>
     
                             <div>
-                                <h2>Another location</h2>
-                                <ul>
+                                <h2 class="sectionSubTitle">Another location</h2>
+                                <ul class="ulGeneral" id="location">
                                     <li>
-                                        <label for="locationStreet">Street</label>
-                                        <input id="locationStreet" type="text">
+                                        <input id="locationStreet" type="text" placeholder="Street">
                                     </li>
                                     <li>
-                                        <label for="locationTown">Town</label>
-                                        <input id="locationTown" type="text">
+                                        <input id="locationTown" type="text" placeholder="Town">
                                     </li>
                                     <li>
-                                        <label for="locatioZip">ZIP</label>
-                                        <input id="locationZip" type="text">
+                                        <input id="locationZip" type="text" placeholder="ZIP">
                                     </li>
                                 </ul>
                             </div>
                         </fieldset>
     
-                        <a class="next" id="next-1" href="#form-2">Next</a>
+                        <a class="next" id="next-1">Next</a>
                     </div>
                
                     <div class="forms" id="form-2">
-                        <h2>I will be shopping for...</h2>
-                        <fieldset>
-                            <ul>
+                        <div class="header">
+                            <h2 class="sectionTitle">I will be shopping for...</h2>
+                        </div>
+
+                        <fieldset class="sectionQuestion">
+                            <ul class="ulGeneral" id="shopFor">
                                 <li>
                                     <input id="shopAdult" type="number">
                                     <label for="shopAdult">adult</label>
@@ -89,12 +95,15 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <a class="next" href="#form-2">Next</a>
+
+                        <a class="next" id="next-2">Next</a>
                     </div>
                     
                     <div class="forms" id="form-3">
-                        <h2>I shop for meals that are...</h2>
-                        <fieldset>
+                        <div class="header">
+                            <h2 class="sectionTitle">I shop for meals that are...</h2>
+                        </div>
+                        <fieldset class="sectionQuestion">
                             <legend>Select all that apply</legend>
                             <ul>
                                 <li>
