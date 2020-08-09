@@ -12,6 +12,7 @@ $borderTest: 1px solid red;
 }
 
 $backgroundColor:#E06943;
+$width:85%;
 
 html{
     background-color:$backgroundColor; //re-adjust background color
@@ -44,7 +45,7 @@ body{
             // border:$borderTest;
             @include setMarPad();
             
-            width:90%;
+            width:$width;
             height:fit-content;
         }
         .navBar{
@@ -85,12 +86,13 @@ body{
             a{
                 // border:$borderTest;
                 background-color:white;
-                width:90%;
+                width:$width;
                 height:fit-content;
                 min-height:100px;
                 @include center();
                 border-radius:20px;
-                box-shadow:4px 4px 4px rgba(0,0,0,.15);
+                border:1px solid lightgrey;
+                box-shadow:2px 4px 2px rgba(0,0,0,.15);
     
                 display:flex;
                 flex-direction:row;

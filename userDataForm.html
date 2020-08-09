@@ -7,15 +7,23 @@
         <meta name="author" content="Diyi Liu, Vicky Chou, Michelle Guo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/functions.js"></script>
         <link rel="stylesheet" href="styles/stylesheet2.css">
 
         <script>
+            function slideRightIn(element){
+                $(element).animate({right:0},"slow");
+            }
+
             $(document).ready(function(){
+                // $(".formSection").fadeIn(2000);
+
                 $("#form-2").hide();
                 $("#form-3").hide();
+
                 $("#next-1").click(function(){
                     $("#form-1").hide();
-                    $("#form-2").show();
+                    $("#form-2").slideDown();
 
                 });
 
