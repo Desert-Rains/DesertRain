@@ -6,188 +6,120 @@
         <meta name="keywords" content="Online grocery shopping, food desert aleviation">
         <meta name="author" content="Diyi Liu, Vicky Chou, Michelle Guo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="styles/stylesheet2.css">
 
+        <script>
+            $(document).ready(function(){
+                $("#form-2").hide();
+                $("#form-3").hide();
+                $("#next-1").click(function(){
+                    $("#form-1").hide();
+                    $("#form-2").show();
+
+                });
+            });
+        </script>
     </head>
 
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a href="index.html">backward</a></li>
+                <ul id="navBar">
+                    <li>backward</li>
                     <li>one</li>
                     <li>two</li>
                     <li>three</li>
-                    <li>four</li>
-                    <li>five</li>
                 </ul>
             </nav>
         </header>
 
-        <section>
-            <form action="shopper.html" metho="GET">
-                <div id="form-1">
-                    <strong>I will be traveling from...</strong>
-                    <fieldset>
-                        <div>
-                            <strong>My current location</strong>
-                            <button id="autoLocate">
-                                <div>
-                                    <image src="" />
-                                    <p>Locate me</p>
-                                </div>
-                            </button>
+        <section class="formSection">
+            <form action="shopper.html" method="GET">
+                <div id="formContainer">
+                    <div class="forms" id="form-1">
+                        <div class="header">
+                            <h2 class="sectionTitle">I will be traveling from...</h2>
                         </div>
 
-                        <div>
-                            <strong>Another location</strong>
-                            <label for="locationStreet">Street</label>
-                            <input id="locationStreet" type="text">
-                            <label for="locationTown">Town</label>
-                            <input id="locationTown" type="text">
-                            <label for="locatioZip">ZIP</label>
-                            <input id="locationZip" type="text">
-                        </div>
-                    </fieldset>
-
-                    <button class="next">Next</button>
-                </div>
-
-                <!-- <div id="form-2">
-                    <strong>I am available to buy grocery on...</strong>
-                    <fieldset>
-                        <ul>
-                            <li id="sunday">
-                                <strong>Sunday's</strong>
-                                <div>
-                                    <label for="Sunfrom">From</label>
-                                    <input id="Sunfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Sunto">To</label>
-                                    <input id="Sunto" type="text">
-                                </div>
-                            </li>
-                            
-                            <li id="monday">
-                                <strong>Monday's</strong>
-                                <div>
-                                    <label for="Monfrom">From</label>
-                                    <input id="Monfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Monto">To</label>
-                                    <input id="Monto" type="text">
-                                </div>
-                            </li>
-
-                            <li id="tuesday">
-                                <strong>Tuesday's</strong>
-                                <div>
-                                    <label for="Tuesfrom">From</label>
-                                    <input id="Tuesfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Tuesto">To</label>
-                                    <input id="Tuesto" type="text">
-                                </div>
-                            </li>
-
-                            <li id="wedday">
-                                <strong>Wednesday's</strong>
-                                <div>
-                                    <label for="Wedfrom">From</label>
-                                    <input id="Wedfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Wedto">To</label>
-                                    <input id="Wedto" type="text">
-                                </div>
-                            </li>
-
-                            <li id="thursday">
-                                <strong>Thursday's</strong>
-                                <div>
-                                    <label for="Thurfrom">From</label>
-                                    <input id="Thurfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Thurto">To</label>
-                                    <input id="Thurto" type="text">
-                                </div>
-                            </li>
-
-                            <li id="friday">
-                                <strong>Friday's</strong>
-                                <div>
-                                    <label for="Frifrom">From</label>
-                                    <input id="Frifrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Frito">To</label>
-                                    <input id="Frito" type="text">
-                                </div>
-                            </li>
-
-                            <li id="saturaday">
-                                <strong>Saturaday's</strong>
-                                <div>
-                                    <label for="Satfrom">From</label>
-                                    <input id="Satfrom" type="text">
-                                </div>
-                                <div>
-                                    <label for="Satto">To</label>
-                                    <input id="Satto" type="text">
-                                </div>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button class="next">Next</button>
-                </div> -->
-                
-                <div>
-                    <strong>I will be shopping for...</strong>
-                    <fieldset>
-                        <ul>
-                            <li>
-                                <input id="shopAdult" type="number">
-                                <label for="shopAdult">adult</label>
-                            </li>
-                            <li>
-                                <input id="shopChild" type="number">
-                                <label for="shopChild">children</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <button class="next">Next</button>
-                </div>
-                
-                <div>
-                    <strong>I shop for meals that are...</strong>
-                    <fieldset>
-                        <legend>Select all that apply</legend>
-                        <ul>
-                            <li>
-                                <input id="gluttenFree" type="checkbox">
-                                <label for="gluttenFree">Glutten-Free</label>
-                            </li>
-                            <li>
-                                <input id="lactoseFree" type="checkbox">
-                                <label for="lactoseFree">Lactose-free</label>
-                            </li>
-                            <li>
-                                <input id="vegan" type="checkbox">
-                                <label for="vegan">Vegan</label>
-                            </li>
-                            <li>
-                                <input id="vegterian" type="checkbox">
-                                <label for="vegeterian">Vegeterian</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                </div>
+                        <fieldset class="sectionQuestion">
+                            <div>
+                                <h2>My current location</h2>
+                                <a id="autoLocate">
+                                    <div>
+                                        <image src="" />
+                                        <p>Locate me</p>
+                                    </div>
+                                </a>
+                            </div>
+    
+                            <div>
+                                <h2>Another location</h2>
+                                <ul>
+                                    <li>
+                                        <label for="locationStreet">Street</label>
+                                        <input id="locationStreet" type="text">
+                                    </li>
+                                    <li>
+                                        <label for="locationTown">Town</label>
+                                        <input id="locationTown" type="text">
+                                    </li>
+                                    <li>
+                                        <label for="locatioZip">ZIP</label>
+                                        <input id="locationZip" type="text">
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+    
+                        <a class="next" id="next-1" href="#form-2">Next</a>
+                    </div>
                
-                <input type="submit" />
+                    <div class="forms" id="form-2">
+                        <h2>I will be shopping for...</h2>
+                        <fieldset>
+                            <ul>
+                                <li>
+                                    <input id="shopAdult" type="number">
+                                    <label for="shopAdult">adult</label>
+                                </li>
+                                <li>
+                                    <input id="shopChild" type="number">
+                                    <label for="shopChild">children</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <a class="next" href="#form-2">Next</a>
+                    </div>
+                    
+                    <div class="forms" id="form-3">
+                        <h2>I shop for meals that are...</h2>
+                        <fieldset>
+                            <legend>Select all that apply</legend>
+                            <ul>
+                                <li>
+                                    <input id="gluttenFree" type="checkbox">
+                                    <label for="gluttenFree">Glutten-Free</label>
+                                </li>
+                                <li>
+                                    <input id="lactoseFree" type="checkbox">
+                                    <label for="lactoseFree">Lactose-free</label>
+                                </li>
+                                <li>
+                                    <input id="vegan" type="checkbox">
+                                    <label for="vegan">Vegan</label>
+                                </li>
+                                <li>
+                                    <input id="vegterian" type="checkbox">
+                                    <label for="vegeterian">Vegeterian</label>
+                                </li>
+                            </ul>
+
+                            <a class="restart" href="index.html">Start Over</a>
+                            <input type="submit" />
+                        </fieldset>
+                    </div>
+                </div>
             </form>
         </section>
     </body>
