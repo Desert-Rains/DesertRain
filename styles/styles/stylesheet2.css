@@ -1,0 +1,284 @@
+html {
+  background-color: #E06943;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+a, a.visited {
+  color: #679127;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header {
+  border: 1px solid red;
+  width: 100%;
+  height: 50px;
+}
+
+body header nav {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header nav #navBar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body header nav #navBar li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body header nav #navBar .bar {
+  width: 65%;
+  max-width: 75px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: lightgrey;
+  opacity: 0.8;
+}
+
+body .formSection {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto 0 auto;
+  border: 1px solid red;
+}
+
+body .formSection form {
+  width: 100%;
+  height: 100%;
+}
+
+body .formSection form #formContainer {
+  width: 100%;
+  height: 100%;
+}
+
+body .formSection form #formContainer .forms {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .formSection form #formContainer .forms .header {
+  width: 100%;
+  height: 25%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .formSection form #formContainer .forms .header .sectionTitle {
+  width: 100%;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion {
+  height: 75%;
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion .sectionSubTitle {
+  margin: 0;
+  padding: 0;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #autoLocate {
+  margin: 15px 0 45px 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 40px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #autoLocate div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 15px;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #autoLocate div image {
+  width: 25px;
+  height: 25px;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #autoLocate p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion .ulGeneral {
+  margin: 0;
+  padding: 0;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion .ulGeneral li {
+  padding: 15px 0 15px 0;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion .ulGeneral li input {
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  opacity: 0.5;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion .ulGeneral li input:focus {
+  width: 99%;
+  opacity: 1;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #location li #locationZip {
+  width: 45%;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #shopFor input {
+  width: 30%;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #shopFor label {
+  margin-left: 10px;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #mealSelect li {
+  border: 1px solid red;
+}
+
+body .formSection form #formContainer .forms .sectionQuestion #mealSelect li input {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+
+body .formSection form #formContainer .forms .next {
+  width: 100%;
+  height: 35px;
+  margin: 10px 0 10px 0;
+  background-color: #F7AA29;
+  text-align: center;
+}
+
+body .formSection form #formContainer .forms #submits {
+  border: 1px solid red;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .formSection form #formContainer .forms #submits .restart {
+  margin: 10px 0 10px 0;
+  border: 1px solid white;
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .formSection form #formContainer .forms #submits .restart div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .formSection form #formContainer .forms #submits #submitButton {
+  background-color: #F7AA29;
+  border: none;
+  height: 35px;
+}
+/*# sourceMappingURL=stylesheet2.css.map */

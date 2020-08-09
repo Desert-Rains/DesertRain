@@ -1,0 +1,187 @@
+html {
+  background-color: #ffff;
+  width: 100%;
+  height: 100%;
+  color: #E06943;
+}
+
+a, a.visited {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body header {
+  border: 1px solid red;
+}
+
+body header nav {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 75px;
+  background-color: #E06943;
+}
+
+body header nav .navBar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  color: white;
+}
+
+body header nav .navBar a, body header nav .navBar a:visited {
+  color: white;
+}
+
+body header nav .navBar li {
+  border: 1px solid red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body header nav .navBar .title {
+  width: 100%;
+}
+
+body header nav .navBar .title h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
+
+body section .filter {
+  border: 1px solid red;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.75);
+  width: 100%;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body section .filter #filterIcon {
+  width: 50%;
+}
+
+body section .filter #clearIcon {
+  width: 50%;
+}
+
+body section .filter #clearIcon strong {
+  float: right;
+}
+
+body section .list {
+  border: 1px solid red;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body section .list .Details {
+  border: 1px solid red;
+  width: 90%;
+  height: 200px;
+  margin: 25px auto 25px auto;
+  -webkit-box-shadow: 4px 4px 2px rgba(211, 211, 211, 0.75);
+          box-shadow: 4px 4px 2px rgba(211, 211, 211, 0.75);
+}
+
+body section .list .Details a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section .list .Details a .image {
+  background-color: lightcoral;
+  width: 100%;
+  height: 65%;
+}
+
+body section .list .Details a .Name {
+  border: 1px solid red;
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .list .Details a .Name strong {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px solid red;
+}
+
+body section .list .Details a .preparation {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body section .list .Details a .preparation .prepIcon {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body section .list .Details a .preparation .prepIcon p {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
+}
+/*# sourceMappingURL=stylesheet3.css.map */
